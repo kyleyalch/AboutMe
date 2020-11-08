@@ -7,7 +7,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
-	<body style="background-color: #E0E4ED;">
+	<body>
+		<!--Navigation/Top bar-->
 		<div class="nav">
 			<div class="toptitle"><img src="assets/logo.png" alt="Logo.png" style="margin-right: 25px;">Kyle Art & Design</div>
 			<div class="topnav" style="float: right;">
@@ -16,11 +17,22 @@
 	  			<a href="timeline.html">Timeline</a>
 			</div>
 		</div>
-		<img src="assets/logos.png" alt="Program Logos" class="centered" style="margin-top: 50px; width: 50%; margin-bottom: 75px;">
+		<p class="centered dzntitle" id="dzn">My main design programs (Click them!)</p>
+		<!--Design program logos-->
+		<div class="row">
+		<img src="assets/logo-ps.png" alt="Photoshop Logo" class="prgmlogo" id="pslogo" onclick="psText()">
+		<img src="assets/logo-ae.png" alt="After Effects Logo" class="prgmlogo" id="aelogo" onclick="aeText()">
+		<img src="assets/logo-c4d.png" alt="Cinema 4D Logo" class="prgmlogo" id="c4dlogo" onclick="c4dText()">
+		</div>
+		<!--Description texts-->
 		<div class="centered">
 			<p class="intro">My designs primarily focus on fantastical, colorful, and often computer-generated assets and subjects. I specialize in photo manipulation, photo compositing, 3D rendering, and visual effects. I get most of the ideas for my personal designs from the music I listen to, or from short two-to-five word concepts or phrases I randomly think of when I let my mind wander. This phrase method has been one of my biggest sources of ideas, and some of my favorite pieces have come from them. I try and keep the fantastical/colorful theme with most of my personal pieces unless it simply wouldn't work, and tweaking the theme as necessary. I use my designs as a way to visualize my concepts, and to remind myself to always stay inspired. <br><br>Creativity and imagination are talents everyone possesses, but most people have locked away or ignored these powerful tools as they're not considered part of the "norm." As people get older, they move away from creativity in the direction of success, thinking that the two are mutually exclusive. Some people don't think creativity has any impact on their job, so they ignore it. No matter what, being creative can have an impact on everything you do, whether you manage a softball team, organize and file paperwork, or deliver packages to homes. I firmly believe that anyone can be creative and having even a little bit of imagination can improve your life, and I help express that through my artwork.</p>
 		</div>
-		<img src="assets/collage.png" alt="Design collage" class="centered" style="margin-top: 50px; width: 60%;">
+		<img src="assets/collage.png" alt="Design collage" class="centered" style="margin-top: 50px; width: 60%;" onclick="Alert()">
+		<div class="centered">
+			<p style="text-align: center;">Don't click me!</p>
+		</div>
+		<script src="scripts.js"></script>
 	</body>
 
 		
